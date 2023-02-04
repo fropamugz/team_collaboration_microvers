@@ -10,7 +10,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #23242a;
+    background-image: url(test.png);
+    background-size: cover;
 }
 .box{
     position: relative;
@@ -27,7 +28,7 @@ body{
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    background: linear-gradient(0deg,transparent,#45f3ff,#ff4564);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -3s;
@@ -57,16 +58,21 @@ body{
     position: absolute;
     inset: 2px;
     border-radius: 8px;
-    background: #28292d;
+    background-image: url(test.png);
     z-index: 10;
     padding: 50px 40px;
     display: flex;
     flex-direction: column; 
 }
+.form h1{
+    color: blanchedalmond;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
 .form h2{
     color: #45f3ff;
     font-weight: 500;
-    text-align: center;
     text-align: center;
     letter-spacing: 0.1em;
 }
@@ -135,6 +141,150 @@ body{
 }
 .links a:hover
 .links a:nth-child(2)
+{
+    color: #45f3ff;
+}
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 600;
+    cursor: pointer;
+}
+.box2{
+     position: relative; 
+     width: 390px;
+    height: 730px;
+      background: #1c1c1c1c;
+     border-radius: 8px;  
+     overflow: hidden; 
+}
+.box2::before{
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: -30%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#eb0329);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.box2::after{
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: -30%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#eb0329,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.form2{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+     background-image: url(test.png); 
+     background-size: cover;
+    z-index: 10;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column; 
+}
+.form2 h1
+{
+    color: #45f3ff;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.form2 h2{
+    color: #45f3ff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.inputBox2{
+    position: relative;
+    width: 300px;
+    margin-top: 34px;
+}
+.inputBox2 input{
+    position: relative;
+   width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.inputBox2 span
+{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition:  0.5s;
+}
+.inputBox2 input:valid ~ span,
+.inputBox2 input:focus ~ span
+{
+    color: #45f3ff;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0.75em;
+}
+.inputBox2 i
+{
+   position: absolute;
+   left: 0;
+   bottom: 0; 
+   width: 100%;
+   height: 2px;
+   background: #45f3ff;
+   border-radius: 4px;
+   transition: 0.5s;
+   pointer-events: none;
+   z-index: 9;
+}
+.inputBox2 input:valid ~ i,
+.inputBox2 input:focus ~ i
+{
+    height: 44px;
+}
+.links2{
+    display: flex;
+    justify-content: space-between;
+}
+.links2 a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.links2 a:hover
+.links2 a:nth-child(2)
 {
     color: #45f3ff;
 }
