@@ -13,11 +13,13 @@ body{
     min-height: 100vh;
     background-image: url(test.png);
     background-size: cover;
+    
 }
+/* ==========================================> Login form ========================================================>*/
 .box{
     position: relative;
     width: 380px;
-    height: 420px;
+    height: 445px;
     background: #1c1c1c1c;
     border-radius: 8px;
     overflow: hidden;
@@ -29,7 +31,7 @@ body{
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#45f3ff,#ff4564);
+    background: linear-gradient(0deg,transparent,#f1010d,#5aec05);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -3s;
@@ -41,25 +43,26 @@ body{
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    background: linear-gradient(0deg,transparent,#f703eb,#45f3ff);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
 @keyframes animate{
     0%
     {
-        transform: rotate(0deg);
+        transform: rotate(deg);
     }
     100%
     {
         transform: rotate(360deg);
     }
 }
+
 .form{
     position: absolute;
-    inset: 2px;
+    inset: 1.7px;
     border-radius: 8px;
-    background-image: url(test.png);
+     background-image: url(test.png); 
     z-index: 10;
     padding: 50px 40px;
     display: flex;
@@ -72,7 +75,7 @@ body{
     letter-spacing: 0.1em;
 }
 .form h2{
-    color: #45f3ff;
+    color: #e58989;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
@@ -108,7 +111,7 @@ body{
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span
 {
-    color: #45f3ff;
+    color: #e58989;
     transform: translateX(-10px) translateY(-34px);
     font-size: 0.75em;
 }
@@ -119,7 +122,7 @@ body{
    bottom: 0; 
    width: 100%;
    height: 2px;
-   background: #45f3ff;
+   background: #e58989;
    border-radius: 4px;
    transition: 0.5s;
    pointer-events: none;
@@ -143,24 +146,33 @@ body{
 .links a:hover
 .links a:nth-child(2)
 {
-    color: #45f3ff;
+    color:#3d0000;
 }
 input[type="submit"]
 {
     border: none;
     outline: none;
-    background: #45f3ff;
+    background-color: #e58989;
     padding: 11px 25px;
     width: 100px;
     margin-top: 10px;
     border-radius: 4px;
     font-size: 600;
     cursor: pointer;
+    color: white;
 }
+input:hover
+{
+    color: rgb(58, 5, 102);
+    transition: 0.5s ease-in-out;
+}
+
+/* ==========================================> Registration form ========================================================>*/
+
 .box2{
      position: relative; 
-     width: 390px;
-    height: 730px;
+     width: 385px;
+    height: 670px;
       background: #1c1c1c1c;
      border-radius: 8px;  
      overflow: hidden; 
@@ -172,7 +184,7 @@ input[type="submit"]
     left: -30%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#45f3ff,#eb0329);
+    background: linear-gradient(0deg,transparent,#000000,#03eb03);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay: -3s;
@@ -184,7 +196,7 @@ input[type="submit"]
     left: -30%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#eb0329,#45f3ff);
+    background: linear-gradient(0deg,transparent,#1303eb,#e00808);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
@@ -202,7 +214,7 @@ input[type="submit"]
     position: absolute;
     inset: 2px;
     border-radius: 8px;
-     background-image: url(test.png); 
+     background-image: url(test.png);   
      background-size: cover;
     z-index: 10;
     padding: 50px 50px;
@@ -211,12 +223,12 @@ input[type="submit"]
 }
 .form2 h1
 {
-    color: #45f3ff;
+    color: #e58989;
     text-align: center;
     letter-spacing: 0.1em;
 }
 .form2 h2{
-    color: #45f3ff;
+    color: #e58989;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
@@ -252,7 +264,7 @@ input[type="submit"]
 .inputBox2 input:valid ~ span,
 .inputBox2 input:focus ~ span
 {
-    color: #45f3ff;
+    color: #e58989;
     transform: translateX(-10px) translateY(-34px);
     font-size: 0.75em;
 }
@@ -263,7 +275,7 @@ input[type="submit"]
    bottom: 0; 
    width: 100%;
    height: 2px;
-   background: #45f3ff;
+   background: #e58989;
    border-radius: 4px;
    transition: 0.5s;
    pointer-events: none;
@@ -287,20 +299,28 @@ input[type="submit"]
 .links2 a:hover
 .links2 a:nth-child(2)
 {
-    color: #45f3ff;
+    color: #e58989;
 }
 input[type="submit"]
 {
     border: none;
     outline: none;
-    background: #45f3ff;
+    background: #e58989;
     padding: 11px 25px;
-    width: 100px;
+    width: 100%;
     margin-top: 10px;
     border-radius: 4px;
     font-size: 600;
     cursor: pointer;
+    color: white;
 }
+input:hover
+{
+    color: rgb(58, 5, 102);
+    transition: 0.5s ease-in-out;
+}
+/* ==========================================> Dashboard ========================================================>*/
+
 .Dashbord
 {
     font-size: 7rem;
@@ -311,5 +331,24 @@ input[type="submit"]
 {
     cursor: pointer;
     text-align: center;
+}
+    .input[type="submit"]
+{
+    border: none;
+    outline: none;
+    background-color: #e58989;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 600;
+    cursor: pointer;
+    color: white;
+}
+.input:hover
+{
+    color: rgb(58, 5, 102);
+    transition: 0.5s ease-in-out;
+
 }
 
