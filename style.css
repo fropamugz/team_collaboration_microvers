@@ -19,7 +19,7 @@ body{
 .box{
     position: relative;
     width: 380px;
-    height: 489px;
+    height: 460px;
     background: #1c1c1c1c;
     border-radius: 8px;
     overflow: hidden;
@@ -83,7 +83,7 @@ body{
 .inputBox{
     position: relative;
     width: 300px;
-    margin-top: 34px;
+    margin-top: 15px;
 }
 .inputBox input{
     position: relative;
