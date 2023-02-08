@@ -19,7 +19,7 @@ body{
 .box{
     position: relative;
     width: 380px;
-    height: 445px;
+    height: 480px;
     background: #1c1c1c1c;
     border-radius: 8px;
     overflow: hidden;
@@ -143,11 +143,17 @@ body{
     color: #8f8f8f;
     text-decoration: none;
 }
-.links a:hover
-.links a:nth-child(2)
+.links a p 
 {
-    color:#3d0000;
+    color: #e58989;
+    transition: .5s;
 }
+.links a p:hover
+{
+    text-decoration: underline;
+    color: #fff;
+}
+
 input[type="submit"]
 {
     border: none;
@@ -166,6 +172,27 @@ input:hover
     color: rgb(58, 5, 102);
     transition: 0.5s ease-in-out;
 }
+.sign_up
+{
+    margin-top: 12px;
+    color: #8f8f8f;
+    font-size: .80em;
+}
+.sign_up a
+{
+    color: #e58989;
+    text-decoration: none;
+    font-size: 1em;
+    padding-left: 18px;
+    transition: .5s;
+}
+.sign_up a:hover
+{
+    text-decoration: underline;
+    color: #fff;
+}
+
+
 
 /* ==========================================> Registration form ========================================================>*/
 
