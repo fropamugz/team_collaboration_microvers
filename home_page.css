@@ -1,0 +1,50 @@
+
+*
+{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+   
+}
+.header
+{
+    position: fixed;
+    background-color: red;
+    display: flex;
+    padding: 10px ;
+    justify-content: space-between;
+    width: 100%;
+}
+.header p
+{
+    font-size: 1.3em;
+    cursor:default;
+}
+.navbar a
+{
+    position: relative;
+    font-size: 1.2em;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
+}
+/* .navbar a::after
+{
+  content: '';
+  position: absolute;  
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background: #fff; 
+  border-radius: 5px; 
+} */
+.navbar input
+{
+    width: 90px;
+    height: 30px;
+    font-size: .80em;
+    border-radius: 6px;
+
+}
+  
