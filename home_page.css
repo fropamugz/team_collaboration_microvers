@@ -4,15 +4,15 @@
     margin: 0;
     padding: 0; 
     box-sizing: border-box; 
-   
 }
+
 .header
 {
+    background-image: url(css_back.jpg);
     position: fixed;
-    background-color: red;
     display: flex;
-    padding: 10px ;
     justify-content: space-between;
+    padding: 10px ; 
     width: 100%;
 }
 .header p
@@ -29,22 +29,22 @@
     color: #000;
     transition: .5s;
 }
-/* .navbar a::after
+.navbar a:hover
 {
-  content: '';
-  position: absolute;  
-  width: 100%;
-  left: 0;
-  height: 2px;
-  background: #fff; 
-  border-radius: 5px; 
-} */
+    color: #fff;
+}
 .navbar input
 {
     width: 90px;
     height: 30px;
     font-size: .80em;
     border-radius: 6px;
-
+    cursor: pointer;
+}
+.navbar input:hover
+{
+    background-color: #230f0f;
+    color: white;
+    border-color: #fff;
 }
   
