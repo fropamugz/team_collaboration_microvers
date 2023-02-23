@@ -3,12 +3,12 @@
 {
     margin: 0;
     padding: 0; 
-    box-sizing: border-box; 
 }
 
-.header
+body .header
 {
     background-image: url(css_back.jpg);
+    overflow: hidden;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -47,4 +47,23 @@
     color: white;
     border-color: #fff;
 }
+
+/* ===========================>body================================= */
+body .home_page__body
+{
+    font-size: 1.2em;
+    padding: 80px;
+    padding-left: 10px;
+    text-align: left;
+    color: #ffffffad;
+    background-image: url(test.png);
+    background-size: cover;
+    height: 100vh;
+    padding-inline-end: 50%;
+}
+.home_page__body img 
+{
+    padding-left: 450px;
+}
+
   
